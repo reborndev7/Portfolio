@@ -1,0 +1,18 @@
+name: debjyoti-saha
+recipe: lamp
+services:
+  appserver:
+    type: php:8.0
+    xdebug: true
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+  myservice:
+    type: mysql:8.0
+  pma:
+    type: phpmyadmin
+config:
+  webroot: web
+  database: mysql:8.0
+  via: nginx
