@@ -1,4 +1,4 @@
-@import "import";
+@import "partials/import";
 * {
   margin: 0;
   padding: 0;
@@ -375,7 +375,7 @@ header {
   }
 }
 .contact {
-  .main-content {
+  .content {
     width: 100%;
     color: $light-text;
     .main-text {
