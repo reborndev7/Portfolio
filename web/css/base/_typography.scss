@@ -1,0 +1,185 @@
+
+// fonts
+@import "fonts";
+
+// Font family.
+$font-awesome: 'Font Awesome 5 Free', sans-serif;
+$font-awesome-brands: 'Font Awesome 5 Brands', sans-serif;
+
+$font-family-base: 'Roobert', sans-serif;
+$font-family-bold: 'Roobert Bold', sans-serif;
+$font-family-bolder: 'Roobert Bolder', sans-serif;
+$font-family-light: 'Roobert Light', sans-serif;
+$font-family-medium: 'Roobert Medium', sans-serif;
+$font-family-italics: 'Roobert italics', sans-serif;
+$font-family-light-italics: 'Roobert Light italics', sans-serif;
+$font-family-bold-italics: 'Roobert Bold italics', sans-serif;
+$font-family-bolder-italics: 'Roobert Bolder italics', sans-serif;
+
+// Font size.
+
+$font-size-h1: 42px;
+$font-size-h2: 38px;
+$font-size-h3: 34px;
+$font-size-h4: 30px;
+$font-size-h5: 26px;
+$font-size-h6: 22px;
+
+// Font size breakpoints.
+$font-tab: 1023px;
+$font-mobile: 479px;
+
+// Spacing.
+$section-padding-top: 50px;
+$section-padding-bottom: 50px;
+$inner-margin-top: 16px;
+$inner-margin-bottom: 16px;
+
+$padding-large-vertical:    10px !default;
+$padding-small-horizontal:  10px !default;
+$padding-xl-vertical : 20px;
+$padding-small-vertical : 5px;
+
+$font-size-8: 0.5rem; // 10px
+$font-size-9: 0.5625rem; // 9px
+$font-size-10: 0.625rem; // 10px
+$font-size-11: 0.6875rem; // 11px
+$font-size-12: 0.75rem; // 12px
+$font-size-13: 0.8125rem; // 12px
+$font-size-14: 0.875rem; // 14px
+$font-size-15: 0.9375rem; // 15px
+$font-size-16: 1rem; // 16px
+$font-size-17: 1.0625rem; // 17px
+$font-size-17-1: 1.1rem; // 17.6px
+$font-size-18: 1.125rem; // 16px
+$font-size-19: 1.1875rem; // 19px
+$font-size-20: 1.25rem; // 20px
+$font-size-21: 1.3125rem; // 21px
+$font-size-22: 1.375rem; // 22px
+$font-size-23: 1.4375rem; //  23px
+$font-size-24: 1.5rem; // 24px
+$font-size-25: 1.5625rem; // 25px
+$font-size-26: 1.625rem; // 26px
+$font-size-27: 1.6875rem; // 27px
+$font-size-28: 1.75rem; // 28px
+$font-size-29: 1.8125rem; // 29px
+$font-size-30: 1.875rem; // 30px
+$font-size-32: 2rem; // 32px
+$font-size-34: 2.125rem; // 34px
+$font-size-35: 2.1875rem; // 35px
+$font-size-36: 2.25rem; // 36px
+$font-size-38: 2.375rem; // 38px
+$font-size-40: 2.5rem; // 40px
+$font-size-42: 2.625rem; // 42px
+$font-size-44: 2.75rem; // 44px
+$font-size-45: 2.8125rem; // 45px
+$font-size-48: 3rem; // 48px
+$font-size-50: 3.125rem; // 50px
+$font-size-52: 3.25rem; // 52px
+$font-size-54: 3.375rem; //54px
+$font-size-56: 3.5rem; // 56px
+$font-size-58: 3.625rem; // 58px
+$font-size-60: 3.875rem; // 60px
+
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-xs: $font-size-base * 0.75;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+%h1 {
+  font-size: $font-size-50;
+  line-height: 1.2;
+  text-transform: capitalize !important;
+  @media only screen and (max-width: $xm) {
+    font-size: $font-size-42;
+  }
+  @media only screen and (max-width: $sm) {
+    font-size: $font-size-32;
+  }
+}
+
+%h2 {
+  font-size: $font-size-40;
+  margin: 0 0 30px;
+  line-height: 1.2;
+  text-transform: capitalize !important;
+  @media only screen and (max-width: $xm) {
+    font-size: $font-size-34;
+  }
+  @media only screen and (max-width: $sm) {
+    font-size: $font-size-28;
+  }
+}
+
+%h3 {
+  font-size: $font-size-30;
+  margin: 0 0 15px;
+  line-height: 1.2;
+  text-transform: capitalize !important;
+  @media only screen and (max-width: $xm) {
+    font-size: $font-size-25;
+  }
+  @media only screen and (max-width: $sm) {
+    font-size: $font-size-22;
+  }
+}
+
+%h4 {
+  font-size: $font-size-24;
+  margin: 0 0 15px;
+  line-height: 1.2;
+  text-transform: capitalize !important;
+  @media only screen and (max-width: $xm) {
+    font-size: $font-size-22;
+  }
+  @media only screen and (max-width: $sm) {
+    font-size: $font-size-20;
+  }
+}
+
+%h5 {
+  font-size: $font-size-20;
+  margin: 0 0 10px;
+  line-height: 1.4;
+  @media only screen and (max-width: $xm) {
+    font-size: $font-size-19;
+  }
+}
+
+%h6 {
+  font-size: $font-size-18;
+  margin: 0 0 10px;
+  line-height: 1.4;
+  @media only screen and (max-width: $xm) {
+    font-size: $font-size-16;
+  }
+}
+
+%p1 {
+  font-size: $font-size-20;
+  @media screen and (max-width: 767px) {
+    font-size: $font-size-18;
+  }
+}
+%p2 {
+  font-size: $font-size-18;
+  @media screen and (max-width: 767px) {
+    font-size: $font-size-16;
+  }
+}
+%p3 {
+  font-size: $font-size-16;
+  @media screen and (max-width: 767px) {
+    font-size: $font-size-15;
+  }
+}
+%p4 {
+  font-size: $font-size-14;
+  @media screen and (max-width: 767px) {
+    font-size: $font-size-13;
+  }
+}

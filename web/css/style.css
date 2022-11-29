@@ -1,0 +1,739 @@
+@font-face {
+  font-family: "Roobert Bold";
+  src: url("/css/fonts/roobert/Roobert-Bold.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert Bolder italics";
+  src: url("/css/fonts/roobert/Roobert-HeavyItalic.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-HeavyItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert Light italics";
+  src: url("/css/fonts/roobert/Roobert-LightItalic.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert italics";
+  src: url("/css/fonts/roobert/Roobert-MediumItalic.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert Bolder";
+  src: url("/css/fonts/roobert/Roobert-Heavy.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert Bold italics";
+  src: url("/css/fonts/roobert/Roobert-BoldItalic.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert italics";
+  src: url("/css/fonts/roobert/Roobert-RegularItalic.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert medium italics";
+  src: url("/css/fonts/roobert/Roobert-SemiBoldItalic.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert normal";
+  src: url("/css/fonts/roobert/Roobert-Medium.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert light";
+  src: url("/css/fonts/roobert/Roobert-Light.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert";
+  src: url("/css/fonts/roobert/Roobert-Regular.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roobert medium";
+  src: url("/css/fonts/roobert/Roobert-SemiBold.woff2") format("woff2"), url("/css/fonts/roobert/Roobert-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#main {
+  background: hsl(0deg, 0%, 20%);
+  font-family: "Roobert", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+#main b,
+#main strong,
+#main h1 {
+  font-family: "Roobert Bolder", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+section .main-content {
+  padding: 120px 0;
+}
+@media screen and (max-width: 992px) {
+  section .main-content {
+    padding: 50px 0;
+  }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-h {
+  align-items: center;
+}
+
+.center-w {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 3rem;
+  padding: 1rem;
+  border: 0.2rem solid #f2a519;
+  color: #fff;
+  margin-top: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.btn a {
+  color: #fff;
+  font-size: 1rem;
+}
+.btn:hover {
+  border-color: #ba181b;
+}
+
+.btn-submit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  overflow: hidden;
+  color: #f2a519;
+  font-weight: 600;
+}
+.btn-submit:focus {
+  -webkit-animation: morph 1.25s forwards;
+          animation: morph 1.25s forwards;
+}
+.btn-submit > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.btn-submit .sent, .btn-submit:focus span {
+  opacity: 0;
+  visibility: hidden;
+}
+.btn-submit:focus .sent {
+  -webkit-animation: reveal 1s 1.25s forwards;
+          animation: reveal 1s 1.25s forwards;
+}
+.btn-submit .msg-plane {
+  display: none;
+}
+.btn-submit:focus .msg-plane {
+  display: block;
+  -webkit-animation: takeOff 1s forwards;
+          animation: takeOff 1s forwards;
+}
+
+@-webkit-keyframes reveal {
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes reveal {
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes morph {
+  10%, 80% {
+    width: 50px;
+    border-radius: 50%;
+    color: #f2a519;
+    font-size: 0;
+  }
+  100% {
+    color: #f2a519;
+    font-size: 16px;
+  }
+}
+@keyframes morph {
+  10%, 80% {
+    width: 50px;
+    border-radius: 50%;
+    color: #f2a519;
+    font-size: 0;
+  }
+  100% {
+    color: #f2a519;
+    font-size: 16px;
+  }
+}
+@-webkit-keyframes takeOff {
+  5%, 15%, 25%, 35%, 45% {
+    transform: translate(-47%, -50%);
+  }
+  10%, 20%, 30%, 40%, 50% {
+    transform: translate(-53%, -50%);
+  }
+  90% {
+    transform: translate(100px, -100px);
+  }
+  100% {
+    transform: translate(100px, -100px);
+  }
+}
+@keyframes takeOff {
+  5%, 15%, 25%, 35%, 45% {
+    transform: translate(-47%, -50%);
+  }
+  10%, 20%, 30%, 40%, 50% {
+    transform: translate(-53%, -50%);
+  }
+  90% {
+    transform: translate(100px, -100px);
+  }
+  100% {
+    transform: translate(100px, -100px);
+  }
+}
+input,
+textarea {
+  background: none !important;
+  border: none;
+  border-bottom: 0.1rem solid #f2a519;
+  color: #fff;
+  font-size: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  z-index: 9;
+}
+
+.title {
+  width: 100%;
+}
+.title h1 {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-size: 2rem;
+  font-family: "Roobert", sans-serif;
+}
+.title h1::before {
+  content: "";
+  position: absolute;
+  top: -0.3rem;
+  width: 3rem;
+  border-bottom: 0.3rem solid white;
+}
+
+.main-content {
+  display: block;
+  text-align: center;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+  grid-template: 1fr/1fr;
+  position: relative;
+}
+.image > * {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+.image--main {
+  z-index: 2;
+}
+.image--main img {
+  min-height: 15rem;
+  width: 15rem;
+  transform: translate(2%, -10.5%);
+}
+.image--border {
+  border-radius: 50%;
+  min-height: 16rem;
+  width: 16rem;
+  border: 1rem solid #f2a519;
+  background-color: #000;
+  z-index: 1;
+}
+.image--shadow {
+  height: 1rem;
+  width: 16rem;
+  border-radius: 100%;
+  box-shadow: 0px 10rem rgba(255, 253, 253, 0.1);
+}
+.image::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+  height: 15px;
+  width: 50px;
+  border: 15px dotted #ccc;
+  z-index: 0;
+}
+.image::after {
+  content: "x x x x";
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "Roobert Bolder", sans-serif;
+  color: #ccc;
+  font-weight: 800;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateZ(-42deg) translateX(10px);
+  z-index: 0;
+}
+
+.icons--curves {
+  position: absolute;
+  top: 18rem;
+  left: -30rem;
+  height: 15rem;
+  width: 15rem;
+  transition: 0.5s;
+}
+.icons--dots {
+  position: absolute;
+  top: -14rem;
+  right: -33rem;
+  height: 20rem;
+  width: 20rem;
+  transition: 0.5s;
+}
+.icons--sky-cross {
+  position: absolute;
+  top: 4.5rem;
+  left: 12rem;
+  height: 1rem;
+  transition: 0.5s;
+  width: 1rem;
+}
+.icons--yellow-cross {
+  position: absolute;
+  top: 4.5rem;
+  left: 13.5rem;
+  height: 1rem;
+  transition: 0.5s;
+  width: 1rem;
+}
+.icons--spiral {
+  position: absolute;
+  top: 10vh;
+  left: 50vh;
+  height: 10rem;
+  transition: 0.5s;
+  width: 10rem;
+  transform: rotate(180deg);
+}
+
+.nav-list {
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translate(0, -50%) rotateZ(90deg);
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pages li {
+  display: inline-block;
+  margin: 0 1vw;
+}
+.pages li a {
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.pages li a.nav-active {
+  color: #f2a519;
+}
+.pages li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translate(0, 0);
+  padding: 15px;
+  background-color: hsl(0deg, 0%, 10%);
+  box-shadow: 0 0 20px 0 rgb(85, 75, 100);
+  z-index: 99;
+}
+.sticky .pages {
+  justify-content: end;
+}
+
+.burger {
+  display: none;
+}
+.burger div {
+  height: 0.2rem;
+  width: 1.5rem;
+  margin: 0.3rem;
+  background-color: #f2a519;
+}
+
+.plane {
+  height: 3rem;
+  position: absolute;
+  top: 12rem;
+  left: 16rem;
+  z-index: 10;
+  translate: rotate(0deg);
+}
+
+.projects .svgme {
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+  width: 550px;
+}
+.projects .svgme .cls-1 {
+  transform: translate(-25px, -100px);
+  fill: none;
+}
+.projects .svgme .cls-1 {
+  fill: #f2a519;
+}
+.projects .svgme .cls-5 {
+  fill: #f2a775;
+}
+.projects .svgme .cls-8 {
+  fill: #d37946;
+}
+.projects .svgme .cls-9 {
+  fill: #fff;
+}
+.projects .svgme .cls-10 {
+  fill: #070507;
+}
+.projects .svgme .cls-11 {
+  fill: #210837;
+}
+.projects .svgme .Eye {
+  overflow: hidden;
+}
+.projects .svgme #Me {
+  opacity: 0;
+  position: absolute;
+}
+
+.contact .main-content {
+  width: 100%;
+  color: #fff;
+}
+.contact .main-content .main-text {
+  font-size: 1.5rem;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+.contact .main-content .main-text a {
+  color: #f2a519;
+}
+.contact .main-content .main-text a:hover {
+  color: #ba181b;
+}
+.contact .main-content .form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact .main-content .form .sub-text {
+  width: 50%;
+  font-size: 1.3rem;
+  padding: 3rem;
+}
+.contact .main-content .form .sub-text form {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.contact .main-content .form .sub-text form label {
+  font-size: 1.3rem;
+  display: contents;
+}
+.contact .main-content .form .sub-text form .btn img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.contact .main-content .form .svg-contact {
+  width: 40%;
+  height: auto;
+}
+.contact .main-content .form .svg-contact .cls-1 {
+  fill: #f2a519;
+}
+.contact .main-content .form .svg-contact .cls-2 {
+  fill: #fff;
+}
+.contact .main-content .form .svg-contact .cls-3 {
+  fill: #e6e6e6;
+}
+.contact .main-content .form .svg-contact .cls-4 {
+  fill: #6c63ff;
+}
+.contact .main-content .form .svg-contact .cls-5 {
+  fill: #2f2e41;
+}
+.contact .main-content .form .svg-contact .cls-6 {
+  fill: #ffb6b6;
+}
+.contact .main-content .form .svg-contact .cls-7 {
+  fill: #cacaca;
+}
+.contact .main-content .form .svg-contact .cls-8 {
+  fill: #3f3d56;
+}
+.contact .main-content .form .svg-contact #me {
+  opacity: 0;
+}
+
+.about-me {
+  position: relative;
+}
+.about-me .title {
+  width: 100%;
+}
+.about-me h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+.about-me h2 span {
+  color: #f2a519;
+}
+.about-me h2 span .txt {
+  border-right: 0.2rem solid #f2a519;
+}
+.about-me p {
+  width: 70%;
+  margin: auto;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.about-me p #name {
+  color: #f2a519;
+}
+.about-me p #company {
+  color: #ba181b;
+}
+.about-me p .btn {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+}
+.about-me p .btn a {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 420px) {
+  .title h1 {
+    font-size: 1rem;
+  }
+  .title h1::before {
+    border-bottom: 0.2rem solid white;
+  }
+  .plane {
+    height: 2rem;
+    top: 11rem;
+    left: 13.5rem;
+  }
+  .image img#myimg {
+    width: 12.5rem;
+    min-height: 12.5rem;
+    transform: translate(2%, -10%);
+  }
+  .image--border {
+    width: 14rem;
+    min-height: 14rem;
+    border: 1rem solid #f2a519;
+  }
+  .image--shadow {
+    width: 10rem;
+    box-shadow: 0px 8rem rgba(255, 253, 253, 0.1);
+  }
+  .image::before {
+    transform: translate(-7rem, -12rem);
+    height: 0.5rem;
+    width: 1rem;
+    border: 0.5rem dotted #fff;
+  }
+  .image::after {
+    font-size: 1rem;
+    transform: rotateZ(-42deg) translate(7rem, 1rem);
+  }
+  .image .icons {
+    height: 5rem;
+    width: 5rem;
+  }
+  .image .icons--yellow-cross {
+    top: 3.5rem;
+    left: 8.5rem;
+  }
+  .image .icons--sky-cross {
+    top: 3.5rem;
+    left: 7rem;
+  }
+  .image .icons--dots {
+    right: -8rem;
+    height: 16rem;
+    width: 15rem;
+  }
+  .image .icons--curves {
+    left: -6rem;
+    height: 15rem;
+  }
+  .about-me h2 {
+    font-size: 1.5rem;
+  }
+  .about-me p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .projects #icon {
+    height: 235px;
+    width: 270px;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .burger div {
+    transition: all 0.3s ease;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-0.35rem, 0.35rem);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-0.35rem, -0.35rem);
+  }
+  @-webkit-keyframes navlinkfade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  @keyframes navlinkfade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}/*# sourceMappingURL=style.css.map */
