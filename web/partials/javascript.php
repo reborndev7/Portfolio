@@ -4,7 +4,10 @@
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js?v=15"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="js/svg.js"></script>
-<script src="js/app.js"></script>
-<script src="js/plane-path.js"></script>
+<script src="/js/svg.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/plane-path.js"></script>
+</body>
 
+</html>
